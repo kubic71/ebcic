@@ -1,4 +1,5 @@
 # EBCIC: Exact Binomial Confidence Interval Calculator
+- this fork ports ebcic to python3.7
 
 These programs are mainly for researchers, developers, and designers who calculate Binomial Confidence Intervals for given parameters:
 
@@ -17,7 +18,8 @@ These programs are mainly for researchers, developers, and designers who calcula
 
     ~~~python
     # Run this cell, if `ebcic` package has not been installed yet:
-    !pip install ebcic
+    !git clone https://github.com/kubic71/ebcic
+    !pip install -e ebcic
     ~~~
 
     ~~~python
@@ -30,7 +32,8 @@ These programs are mainly for researchers, developers, and designers who calcula
 1. Install [PyPI ebcic package](https://pypi.org/project/ebcic/)
 
     ~~~console
-    pip install ebcic
+    git clone https://github.com/kubic71/ebcic
+    pip install -e ebcic
     ~~~
 
 2. Show help:
