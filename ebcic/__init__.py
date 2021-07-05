@@ -637,7 +637,7 @@ def alpha_to_zah(alpha, sig_digits=-5):
     """
     USE_NORMAL_DIST = True
     if USE_NORMAL_DIST:  # Python > 3.8
-        from statistics import NormalDist
+        from .statistics import NormalDist
         tmp_zah = NormalDist(mu=0, sigma=1).inv_cdf(1 - alpha / 2.)
     else:
         tmp_zah = st.norm.ppf(1 - alpha / 2.)
@@ -681,7 +681,7 @@ def zah_to_alpha(zah, sig_digits=-5):
     """
     USE_NORMAL_DIST = True
     if USE_NORMAL_DIST:
-        from statistics import NormalDist
+        from .statistics import NormalDist
         cdf_zah = NormalDist(mu=0, sigma=1).cdf(zah)
     else:
         cdf_zah = st.norm.cdf(zah)
